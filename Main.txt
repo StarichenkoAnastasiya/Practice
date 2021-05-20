@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+        Bill bill = new Bill();
+        
+        bill.getBook().setBookID(1547345);
+        bill.getBook().setAuthor("А.С.Пушкин");
+        bill.getBook().setName("Дубровский");
+        bill.getBook().setGenre("роман");
+        bill.getBook().setTotalCost(264.0);
+        bill.getBook().setCollateralValue(264.0);
+        bill.getBook().setRentalPriceInWeek(18.48);
+        bill.getBook().setStatus("в прокате");  
+        
+        bill.getLib().setName("Борисова Татьяна Олеговна");
+        bill.getLib().setPassword("Cat123");
+        
+        bill.getMem().setMemberID(182935);
+        bill.getMem().setName("Петров Олег Александрович");
+        bill.getMem().setAddress("у.Маяковского 69");
+        bill.getMem().setPhone(893459);
+        
+        bill.getTran().setTransID(386930);
+        bill.getTran().setDateOfIssue(110521);
+        bill.getTran().setDueDate(140621);
+        
+        bill.setDate(110521);
+        bill.setPrice(337.92);
+        
+        bill.printAboutObject();
+    }
+}

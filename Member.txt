@@ -1,0 +1,38 @@
+public class Member {
+    private int memberID;
+    private int phone;
+    private String name;
+    private String address;
+    
+    public void setMemberID(int memberID){
+        this.memberID = memberID;
+    }
+    
+    public int getMemberID(){
+        return memberID;
+    }
+    
+    public void setPhone(int phone){
+        this.phone = phone;
+    }
+    
+    public int getPhone(){
+        return phone;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setAddress(String address){
+        this.address = address;
+    }
+    
+    public String getAddress(){
+        return address;
+    }
+}

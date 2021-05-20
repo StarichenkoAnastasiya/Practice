@@ -1,0 +1,78 @@
+public class Bill {
+    private Librarian lib;
+    private Transaction tran;
+    private Member mem;
+    private Book book;
+    private int date;
+    private double price;
+    
+    public Bill(){
+        this.lib = new Librarian();
+        this.mem = new Member();
+        this.tran = new Transaction();
+        this.book = new Book();
+    }
+    
+    public Librarian getLib(){
+        return lib;
+    }
+    
+    public Member getMem(){
+        return mem;
+    }
+    
+    public Transaction getTran(){
+        return tran;
+    }
+    
+    public Book getBook(){
+        return book;
+    }
+    
+    public void setDate(int date){
+        this.date = date;
+    }
+    
+    public int getDate(){
+        return date;
+    }
+    
+    public void setPrice(double price){
+        this.price = price;
+    }
+    
+    public double getPrice(){
+        return price;
+    }
+    
+    public void printAboutObject(){
+        System.out.println("Книга:");
+        System.out.println("Номер - " + this.book.getBookID());
+        System.out.println("Автор - " + this.book.getAuthor());
+        System.out.println("Название - " + this.book.getName());
+        System.out.println("Жанр - " + this.book.getGenre());
+        System.out.println("Ценность книги - " + this.book.getTotalCost());
+        System.out.println("Залоговая стоимость - " + this.book.getCollateralValue());
+        System.out.println("Стоимость аренды в неделю - " + this.book.getRentalPriceInWeek());
+        System.out.println("Статус - " + this.book.getStatus());
+        System.out.println();
+        System.out.println("Библиотекарь:");
+        System.out.println("ФИО - " + this.lib.getName());
+        System.out.println("Пароль - " + this.lib.getPassword());
+        System.out.println();
+        System.out.println("Читатель:");
+        System.out.println("Номер читателя - " + this.mem.getMemberID());
+        System.out.println("ФИО - " + this.mem.getName());
+        System.out.println("Адрес - " + this.mem.getAddress());
+        System.out.println("Телефон - " + this.mem.getPhone());
+        System.out.println();
+        System.out.println("Операция:");
+        System.out.println("Номер - " + this.getTran().getTransID());
+        System.out.println("Дата выдачи - " + this.getTran().getDateOfIssue());
+        System.out.println("Дата возврата - " + this.getTran().getDueDate());
+        System.out.println();
+        System.out.println("Счет:");
+        System.out.println("Дата - " + this.getDate());
+        System.out.println("Цена - " + this.getPrice());
+    }
+}

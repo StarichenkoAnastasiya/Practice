@@ -1,0 +1,89 @@
+public class Book {
+    private Librarian lib;
+    private Member mem;
+    private int bookID;
+    private String author;
+    private String name;
+    private String genre;
+    private double totalCost;
+    private double collateralValue;
+    private double rentalPriceInWeek;
+    private String status;
+    
+    public Book(){
+        this.lib = new Librarian();
+        this.mem = new Member();
+    }
+    
+    public Librarian getLib(){
+        return lib;
+    }
+    
+    public Member getMem(){
+        return mem;
+    }
+    
+    public void setBookID(int bookID){
+        this.bookID = bookID;
+    }
+  
+    public int getBookID(){
+        return bookID;
+    }
+    
+    public void setAuthor(String author){
+        this.author = author;
+    }
+    
+    public String getAuthor(){
+        return author;
+    }
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public void setGenre(String genre){
+        this.genre = genre;
+    }
+    
+    public String getGenre(){
+        return genre;
+    }
+    
+    public void setTotalCost(double totalCost){
+        this.totalCost = totalCost;
+    } 
+    
+    public double getTotalCost(){
+        return totalCost;
+    }
+    
+    public void setCollateralValue(double collateralValue){
+        this.collateralValue = collateralValue;
+    } 
+    
+    public double getCollateralValue(){
+        return collateralValue;
+    }
+    
+    public void setRentalPriceInWeek(double rentalPriceInWeek){
+        this.rentalPriceInWeek = rentalPriceInWeek;
+    } 
+    
+    public double getRentalPriceInWeek(){
+        return rentalPriceInWeek;
+    }
+    
+    public void setStatus(String status){
+        this.status = status;
+    }
+    
+    public String getStatus(){
+        return status;
+    }
+}

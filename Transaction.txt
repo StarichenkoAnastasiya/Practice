@@ -1,0 +1,38 @@
+public class Transaction {
+    private Librarian lib;
+    private int transID;
+    private int dateOfIssue;
+    private int dueDate;
+    
+    public Transaction(){
+        this.lib = new Librarian();
+    }
+    
+    public Librarian getLib(){
+        return lib;
+    }
+    
+    public void setTransID(int transID){
+        this.transID = transID;
+    } 
+    
+    public int getTransID(){
+        return transID;
+    }
+    
+    public void setDateOfIssue(int dateOfIssue){
+        this.dateOfIssue = dateOfIssue;
+    }
+    
+    public int getDateOfIssue(){
+        return dateOfIssue;
+    }
+    
+    public void setDueDate(int dueDate){
+        this.dueDate = dueDate;
+    }
+    
+    public int getDueDate(){
+        return dueDate;
+    }
+}
